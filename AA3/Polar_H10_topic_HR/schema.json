@@ -1,8 +1,8 @@
 {
     "$schema":"http://json-schema.org/schema#",
-    "$id":"https://smart-data-models.github.io/Polar_H10_topic_ACC/schema.json",
-    "title":"Smart Data Models - Polar H10 ACC Topic",
-    "description":"Schema for Polar H10 Accelerometer Topic",
+    "$id":"https://smart-data-models.github.io/Polar_H10_topic_HR/schema.json",
+    "title":"Smart Data Models - Polar H10 Heart Rate Topic",
+    "description":"Schema for Polar H10 Heart Rate Topic",
     "type":"object",
     "allOf":[
         {
@@ -37,19 +37,20 @@
                     "type":"integer",
                     "description":"Sensor Timestamp"
                 },
-                "acc":{
+                "hr":{
+                    "type":"integer",
+                    "description":"Heart Rate"
+                },
+                "hrv":{
+                    "type":"integer",
+                    "description":"Heart Rate Variability"
+                },
+                "rr":{
                     "type":"array",
-                    "description":"Accelerometer data points",
+                    "description":"RR Interval",
                     "items":{
-                        "type":"array",
-                        "items":{
-                            "type":"integer"
-                        },
-                        "minItems":3,
-                        "maxItems":3
-                    },
-                    "minItems":36,
-                    "maxItems":36
+                        "type":"integer"
+                    }
                 }
             },
             "required":[
@@ -59,7 +60,9 @@
                 "sampleRate",
                 "timeStamp",
                 "sensorTimeStamp",
-                "acc"
+                "hr",
+                "hrv",
+                "rr"
             ]
         }
     ]

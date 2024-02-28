@@ -1,0 +1,112 @@
+{
+    "$schema":"http://json-schema.org/schema#",
+    "$id":"https://smart-data-models.github.io/SDM_JSON_Schema/ModbusTCP_devices/schema.json",
+    "title":"Smart Data Models - ModbusTCP_devices",
+    "description":"Schema for Modbus TCP devices",
+    "type":"object",
+    "allOf":[
+        {
+            "$ref":"https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref":"https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties":{
+                "devices":{
+                    "type":"array",
+                    "description":"Array of Modbus TCP devices",
+                    "items":{
+                        "type":"object",
+                        "properties":{
+                            "Device Name":{
+                                "type":"string",
+                                "description":"Name of the device"
+                            },
+                            "Voltage Region":{
+                                "type":"string",
+                                "description":"Voltage region of the device"
+                            },
+                            "No of Measurements":{
+                                "type":"number",
+                                "description":"Number of measurements supported by the device"
+                            },
+                            "IP Address":{
+                                "type":"string",
+                                "description":"IP address of the device"
+                            },
+                            "Port":{
+                                "type":"number",
+                                "description":"Port number of the device"
+                            },
+                            "Slave ID":{
+                                "type":"number",
+                                "description":"Modbus slave ID"
+                            },
+                            "Modbus Function Code":{
+                                "type":"string",
+                                "description":"Modbus function code"
+                            },
+                            "Gates":{
+                                "type":"array",
+                                "description":"Array of gates for the device",
+                                "items":{
+                                    "type":"object",
+                                    "properties":{
+                                        "Gate name":{
+                                            "type":"string",
+                                            "description":"Name of the gate"
+                                        },
+                                        "measurements":{
+                                            "type":"array",
+                                            "description":"Array of measurements for the gate",
+                                            "items":{
+                                                "type":"object",
+                                                "properties":{
+                                                    "Measurement Detailed Description":{
+                                                        "type":"string",
+                                                        "description":"Detailed description of the measurement"
+                                                    },
+                                                    "Measurement Starting Address\n(Decimal)":{
+                                                        "type":"number",
+                                                        "description":"Starting address of the measurement in decimal"
+                                                    },
+                                                    "Units":{
+                                                        "type":"string",
+                                                        "description":"Units of the measurement"
+                                                    }
+                                                },
+                                                "required":[
+                                                    "Measurement Detailed Description",
+                                                    "Measurement Starting Address\n(Decimal)",
+                                                    "Units"
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "required":[
+                                        "Gate name",
+                                        "measurements"
+                                    ]
+                                }
+                            }
+                        },
+                        "required":[
+                            "Device Name",
+                            "Voltage Region",
+                            "No of Measurements",
+                            "IP Address",
+                            "Port",
+                            "Slave ID",
+                            "Modbus Function Code",
+                            "Gates"
+                        ]
+                    }
+                }
+            },
+            "required":[
+                "devices"
+            ]
+        }
+    ]
+}
