@@ -1,0 +1,51 @@
+{
+    "$schema":"http://json-schema.org/schema#",
+    "$id":"https://smart-data-models.github.io/dog_location/schema.json",
+    "title":"Smart Data Models - dog_location",
+    "description":"Schema for tracking the location of a vehicle e.g dog",
+    "type":"object",
+    "allOf":[
+        {
+            "$ref":"https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref":"https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties":{
+                "vehicleID":{
+                    "type":"string",
+                    "description":"Identifier of the vehicle (dog)"
+                },
+                "Location":{
+                    "type":"object",
+                    "description":"Location information",
+                    "properties":{
+                        "latitude":{
+                            "type":"string",
+                            "description":"Latitude of the vehicle (dog)"
+                        },
+                        "longitude":{
+                            "type":"string",
+                            "description":"Longitude of the vehicle (dog)"
+                        },
+                        "Time":{
+                            "type":"string",
+                            "format":"date-time",
+                            "description":"Timestamp of the location data"
+                        }
+                    },
+                    "required":[
+                        "latitude",
+                        "longitude",
+                        "Time"
+                    ]
+                }
+            },
+            "required":[
+                "vehicleID",
+                "Location"
+            ]
+        }
+    ]
+}
