@@ -1,0 +1,50 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.1.0",
+    "$id": "https://smart-data-models.github.io/dataModel.SenseHat/schema.json",
+    "title": "SenseHat Data Model",
+    "description": "Data model for SenseHat sensor readings.",
+    "type": "object",
+    "properties": {
+        "accelerometer": {
+            "type": "object",
+            "description": "Accelerometer readings from the sensor.",
+            "properties": {
+                "x": {
+                    "type": "number",
+                    "description": "X-axis reading from the accelerometer."
+                },
+                "y": {
+                    "type": "number",
+                    "description": "Y-axis reading from the accelerometer."
+                },
+                "z": {
+                    "type": "number",
+                    "description": "Z-axis reading from the accelerometer."
+                }
+            }
+        },
+        "humidity": {
+            "type": "number",
+            "description": "Humidity reading from the sensor."
+        },
+        "temperature": {
+            "type": "number",
+            "description": "Temperature reading from the sensor."
+        },
+        "pressure": {
+            "type": "number",
+            "description": "Pressure reading from the sensor."
+        },
+        "raspSn": {
+            "type": "string",
+            "description": "Serial number of the Raspberry Pi."
+        }
+    },
+    "required": ["accelerometer", 
+               "humidity", 
+               "temperature", 
+               "pressure", 
+               "raspSn", 
+               "id"]
+}
