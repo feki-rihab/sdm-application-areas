@@ -13,4 +13,4 @@ The following table illustrates the different data models corresponding to the d
 
 ## Status of the Data Models 
 
-Status of the data models can be found under this [link](https://docs.google.com/spreadsheets/d/15DAfD1Mjxk1-xJRnWuYFp_FH2EOdJQTGgLQLJ_mo6BU/edit?usp=sharing) 
+Status of the data models can be found under this [link](https://docs.google.com/spreadsheets/d/15DAfD1Mjxk1-xJRnWuYFp_FH2EOdJQTGgLQLJ_mo6BU/edit?usp=sharing). 
