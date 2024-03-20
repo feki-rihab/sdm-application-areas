@@ -13,6 +13,13 @@
         },
         {
             "properties":{
+                "type": {
+                    "type": "string",
+                    "description": "Property. NGSI entity type. It has to be Scheduling",
+                    "enum": [
+                        "Scheduling"
+                    ]
+                },
                 "timestamp":{
                     "type":"number",
                     "description":"Timestamp of the scheduling data"

@@ -14,9 +14,16 @@
         }
     ],
     "properties":{
+        "type": {
+            "type": "string",
+            "description": "Property. NGSI entity type. It has to be SenseHat",
+            "enum": [
+                "SenseHat"
+            ]
+        },
         "accelerometer":{
             "type":"object",
-            "description":"Accelerometer readings from the sensor.",
+            "description":"Property. NGSI Entity type. Accelerometer readings from the sensor.",
             "properties":{
                 "x":{
                     "type":"number",

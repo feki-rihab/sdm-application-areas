@@ -14,6 +14,13 @@
         }
     ],
     "properties":{
+        "type": {
+            "type": "string",
+            "description": "Property. NGSI entity type. It has to be Telematics",
+            "enum": [
+                "Telematics"
+            ]
+        },
         "UUID":{
             "type":"string",
             "description":"Unique identifier for the telematics data."
@@ -27,45 +34,28 @@
             "description":"Time when the message was received."
         },
         "direction":{
-            "type":[
+            "type":
                 "integer",
-                null
-            ],
             "description":220
         },
         "engineStatus":{
-            "type":[
-                "integer",
-                null
-            ],
+            "type":"integer",
             "description":1
         },
         "phi":{
-            "type":[
-                "number",
-                null
-            ],
+            "type":"number",
             "description":37.8745952
         },
         "lamda":{
-            "type":[
-                "number",
-                null
-            ],
+            "type":"number",
             "description":23.921456
         },
         "z":{
-            "type":[
-                "number",
-                null
-            ],
+            "type":"number",
             "description":87
         },
         "velocity":{
-            "type":[
-                "integer",
-                null
-            ],
+            "type":"integer",
             "description":50
         },
         "outerVoltage":{

@@ -13,6 +13,13 @@
         },
         {
             "properties":{
+                "type": {
+                    "type": "string",
+                    "description": "Property. NGSI entity type. It has to be DogLocation",
+                    "enum": [
+                        "DogLocation"
+                    ]
+                },
                 "vehicleID":{
                     "type":"string",
                     "description":"Identifier of the vehicle (dog)"

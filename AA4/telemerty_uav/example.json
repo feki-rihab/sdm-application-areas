@@ -12,7 +12,7 @@
     "gimbal_ROLL":0.0,
     "headingDroneDegress":-92.0,
     "isInMission":false,
-    "missionPlan":null,
-    "currentWaypointMissionPlanner":"null",
+    "missionPlan":"drone mission plan",
+    "currentWaypointMissionPlanner":"ok",
     "batteryPercentage":22
 }

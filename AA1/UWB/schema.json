@@ -14,6 +14,13 @@
         }
     ],
     "properties":{
+        "type": {
+            "type": "string",
+            "description": "Property. NGSI entity type. It has to be UWB",
+            "enum": [
+                "UWB"
+            ]
+        },
         "version":{
             "type":"string",
             "description":"Version of the data."

@@ -13,6 +13,13 @@
         },
         {
             "properties":{
+                "type": {
+                    "type": "string",
+                    "description": "Property. NGSI entity type. It has to be telemetryUAV",
+                    "enum": [
+                        "telemetryUAV"
+                    ]
+                },
                 "droneID":{
                     "type":"string",
                     "description":"Identifier of the drone"
@@ -66,7 +73,7 @@
                     "description":"Indicates whether the drone is in a mission"
                 },
                 "missionPlan":{
-                    "type":"null",
+                    "type":"string",
                     "description":"Details of the drone's mission plan (null if not available)"
                 },
                 "currentWaypointMissionPlanner":{

@@ -13,6 +13,13 @@
         },
         {
             "properties":{
+                "type": {
+                    "type": "string",
+                    "description": "Property. NGSI entity type. It has to be ModbusTCP",
+                    "enum": [
+                        "ModbusTCP"
+                    ]
+                },
                 "devices":{
                     "type":"array",
                     "description":"Array of Modbus TCP devices",

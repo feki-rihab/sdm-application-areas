@@ -13,6 +13,13 @@
         },
         {
             "properties":{
+                "type": {
+                    "type": "string",
+                    "description": "Property. NGSI entity type. It has to be PolarH10TopicHR",
+                    "enum": [
+                        "PolarH10TopicHR"
+                    ]
+                },
                 "clientId":{
                     "type":"string",
                     "description":"Client ID"

@@ -10,6 +10,13 @@
         }
     ],
     "properties":{
+        "type": {
+            "type": "string",
+            "description": "Property. NGSI entity type. It has to be Detection",
+            "enum": [
+                "Detection"
+            ]
+        },
         "License":{
             "type":"string",
             "description":"License information for the entity detection data."
