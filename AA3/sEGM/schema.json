@@ -2,7 +2,7 @@
     "$schema":"http://json-schema.org/schema#",
     "$id":"https://smart-data-models.github.io/sEGM/schema.json",
     "title":"Smart Data Models - sEGM",
-    "description":"Schema for sEGM (Single-Channel EGM) data",
+    "description":"Schema for sEGM (Single-Channel EGM) sensor used to measure muscle activity of the specific muscle (where they are placed)",
     "type":"object",
     "allOf":[
         {
