@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.1.0",
+    "modelTags": "INCODE",
     "title": "Entity Detection Data Model",
     "description": "Data model for entity detection events.",
     "type": "object",

@@ -1,8 +1,10 @@
 {
     "$schema":"http://json-schema.org/schema#",
+    "$schemaVersion": "0.1.0",
+    "modelTags": "INCODE",
     "$id":"https://smart-data-models.github.io/sEGM/schema.json",
     "title":"Smart Data Models - sEGM",
-    "description":"Schema for sEGM (Single-Channel EGM) sensor used to measure muscle activity of the specific muscle (where they are placed)",
+    "description":"A Data Model of sEGM (Single-Channel EGM) sensor used to measure muscle activity of the specific muscle (where they are placed)",
     "type":"object",
     "allOf":[
         {

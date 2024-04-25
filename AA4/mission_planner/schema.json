@@ -1,8 +1,10 @@
 {
     "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.1.0",
+    "modelTags": "INCODE",
     "$id": "https://smart-data-models.github.io/mission_planner/schema.json",
     "title": "Smart Data Models - Mission Planner",
-    "description": "Schema for tracking the location and waypoints of a mission planner",
+    "description": "A Data Model of tracking the location and waypoints of a mission planner",
     "type": "object",
     "allOf": [
       {

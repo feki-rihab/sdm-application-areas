@@ -1,8 +1,10 @@
 {
     "$schema":"http://json-schema.org/schema#",
+    "$schemaVersion": "0.1.0",
+    "modelTags": "INCODE",
     "$id":"https://smart-data-models.github.io/telemetry_uva/schema.json",
     "title":"Smart Data Models - telemetry_uva",
-    "description":"Schema for telemetry data of Unmanned Aerial Vehicle (UAV)",
+    "description":"A Data Model of telemetry data of Unmanned Aerial Vehicle (UAV)",
     "type":"object",
     "allOf":[
         {

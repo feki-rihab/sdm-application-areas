@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.1.0",
+    "modelTags": "INCODE",
     "$id": "https://smart-data-models.github.io/dataModel.SenseHat/schema.json",
     "title": "SenseHat Data Model",
     "description": "Data model for SenseHat sensor readings.",

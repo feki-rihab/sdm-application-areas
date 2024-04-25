@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.1.0",
+    "modelTags": "INCODE",
     "$id": "https://smart-data-models.github.io/dataModel.Telematics/schema.json",
     "title": "Telematics Data Model",
     "description": "Data model for telematics entity based on Smart Data Models standards.",
