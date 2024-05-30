@@ -4,7 +4,7 @@
     "modelTags": "INCODE",
     "$id":"https://smart-data-models.github.io/SDM_JSON_Schema/scheduling/schema.json",
     "title":"Smart Data Models - Scheduling",
-    "description":"A Data Model of scheduling data",
+    "description":"A Data Model of scheduling a device data",
     "type":"object",
     "allOf":[
         {
